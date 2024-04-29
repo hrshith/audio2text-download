@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio 2 Text Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audio 2 Text Service</h1>
+    <p>Welcome to the audio to text service, please upload the audio file in the box below and you can download/view the output once done.</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if text_output %}
+    <textarea>{{ text_output }}</textarea>
+    <a href="{{ download_url }}?text_output={{ text_output }}" download="transcription.txt">Download</a>
+    {% endif %}
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <script>
+        // Automatically scroll to the bottom of the textarea when it updates
+        const textarea = document.querySelector('textarea');
+        textarea.addEventListener('input', () => {
+            textarea.scrollTop = textarea.scrollHeight;
+        });
+    </script>
+</body>
+</html>
