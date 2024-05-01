@@ -52,7 +52,7 @@ cd audio2txt
 
 Build the container
 ```
-docker build -t audio2txt .
+docker build -t audio2txt 
 ```
 
 Finally once the container is build you can launch it using the command 
