@@ -34,7 +34,7 @@ These instructions will get you a copy of the project up and running on your loc
 The container runs on port 5000, launch and run it using the below command.
 
 ```
-docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text-downlod
+docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text-download
 ```
 ### Browse to http://your-host-ip:5000 to access the web UI
 
@@ -42,7 +42,7 @@ docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text-downlod
 
 You can also build the container locally. Just clone this repository
 ```
-git clone https://github.com/hrshith/audio2text-downlod.git
+git clone https://github.com/hrshith/audio2text-download.git
 ```
 
 Then change into the directory
@@ -52,12 +52,12 @@ cd audio2txt
 
 Build the container
 ```
-docker build -t audio2txt 
+docker build -t audio2txt-download
 ```
 
 Finally once the container is build you can launch it using the command 
 ```
-docker run -d --name=audio2txt -p 5000:5000 audio2txt-downlod
+docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
 ```
 
 # Additional Notes
@@ -66,7 +66,7 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-downlod
 
 1. Once the container is running, enter it
    ```
-   docker exec -it audio2txt bash
+   docker exec -it audio2txt-download bash
    ```
 2. Look for the **text.py** file and open it (You can install and use an editor of your choice I am using nano)
    ```
