@@ -11,14 +11,17 @@ This repository hosts a Flask web application integrated with Audi2Text for spee
 
 This Docker image contains the Flask app configured with Audi2Text and Whisper messaging capabilities. It simplifies deployment and offers flexibility for various environments. 
 
+**Why This Image:**
+This image provides a convert setup for a  Audi2Text integration using python Flask app and Whisper messaging services enabling easy deployment and utilisation of audio-to-text and secure messaging  and download features.
+
+**Overview:**
+This Docker image facilitates the deployment of a Flask app with Audi2Text integration and Whisper messaging, streamlining the process of setting up a web application with advanced functionalities. It serves as a foundation for building speech-to-text enabled applications with secure communication capabilities.
+
+
 **Getting Started**
 
 These instructions will get you a copy of the project up and running on your local machine and developement server for a development and testing purposes.
 
-**References:**
-- **Flask**: https://flask.palletsprojects.com/en/3.0.x/
-
-- **Whisper**: https://github.com/openai/whisper/blob/main/README.md
 
 **Pre-requisites:**
 - Docker installed on the host machine or server 
@@ -27,9 +30,6 @@ These instructions will get you a copy of the project up and running on your loc
 - Docker container only 
 
 ### How to use this image
-
-
-# Quick Start
 
 The container runs on port 5000, launch and run it using the below command.
 
@@ -98,15 +98,6 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt
 | large  |   1550 M   |        N/A         |      `large`       |    ~10 GB     |       1x       |
 
 
-
-# Future Plans
-- Plans to make the model change accessible during the run command itself to prevent additional work when changing models
-- Currently the app is running on the development server, soon I will be moving it to a WSGI server for proper production use
-- Beautify the web app further since right now its quite barebones but it does the job!
-
-# Credits
-Special credits go to the OpenAI Whisper project which has made this project possible! Check them out at - [Whisper Project](https://github.com/openai/whisper)
-
 **Run Docker Image**
 ```bash
 docker run -p 5000:5000 <image_name>
@@ -117,13 +108,26 @@ docker run -p 5000:5000 audio2txtdowload
 **Deployment:**
 Access the application at `http://localhost:5000` after running the Docker container. one port - 5000 only 
 
-**Why This Image:**
-This image provides a convert setup for a  Audi2Text integration using python Flask app and Whisper messaging services enabling easy deployment and utilisation of audio-to-text and secure messaging  and download features.
 
-**Overview:**
-This Docker image facilitates the deployment of a Flask app with Audi2Text integration and Whisper messaging, streamlining the process of setting up a web application with advanced functionalities. It serves as a foundation for building speech-to-text enabled applications with secure communication capabilities.
 
 **Resources:**
 - Documentation Link:  https://github.com/openai/whisper/blob/main/README.md
 
-   -https://docs.docker.com/guides/
+ -https://docs.docker.com/guides/
+
+
+  # Future Plans
+- Plans to make the model change accessible during the run command itself to prevent additional work when changing models
+- Currently the app is running on the development server, soon I will be moving it to a WSGI server for proper production use
+- Beautify the web app further since right now its quite barebones but it does the job!
+
+# Credits
+Special credits go to the OpenAI Whisper project which has made this project possible! Check them out at - [Whisper Project](https://github.com/openai/whisper)
+
+
+**References:**
+- **Flask**: https://flask.palletsprojects.com/en/3.0.x/
+
+- **Whisper**: https://github.com/openai/whisper/blob/main/README.md
+
+
