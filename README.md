@@ -34,7 +34,7 @@ These instructions will get you a copy of the project up and running on your loc
 The container runs on port 5000, launch and run it using the below command.
 
 ```
-docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text
+docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text-downlod
 ```
 ### Browse to http://your-host-ip:5000 to access the web UI
 
@@ -42,7 +42,7 @@ docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text
 
 You can also build the container locally. Just clone this repository
 ```
-git clone https://github.com/hrshith/audio2text.git
+git clone https://github.com/hrshith/audio2text-downlod.git
 ```
 
 Then change into the directory
@@ -57,7 +57,7 @@ docker build -t audio2txt
 
 Finally once the container is build you can launch it using the command 
 ```
-docker run -d --name=audio2txt -p 5000:5000 audio2txt
+docker run -d --name=audio2txt -p 5000:5000 audio2txt-downlod
 ```
 
 # Additional Notes
@@ -129,5 +129,7 @@ Special credits go to the OpenAI Whisper project which has made this project pos
 - **Flask**: https://flask.palletsprojects.com/en/3.0.x/
 
 - **Whisper**: https://github.com/openai/whisper/blob/main/README.md
+
+- **Docker**: https://docs.docker.com/reference/dockerfile
 
 
