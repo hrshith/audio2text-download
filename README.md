@@ -11,6 +11,10 @@ This repository hosts a Flask web application integrated with Audi2Text for spee
 
 This Docker image contains the Flask app configured with Audi2Text and Whisper messaging capabilities. It simplifies deployment and offers flexibility for various environments. 
 
+**Getting Started**
+
+These instructions will get you a copy of the project up and running on your local machine and developement server for a development and testing purposes.
+
 **References:**
 - **Flask**: https://flask.palletsprojects.com/en/3.0.x/
 
@@ -30,7 +34,7 @@ This Docker image contains the Flask app configured with Audi2Text and Whisper m
 The container runs on port 5000, launch and run it using the below command.
 
 ```
-docker run -d --name=audio2txt -p 5000:5000 cbcb00/audio2txt
+docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text
 ```
 ### Browse to http://your-host-ip:5000 to access the web UI
 
@@ -38,7 +42,7 @@ docker run -d --name=audio2txt -p 5000:5000 cbcb00/audio2txt
 
 You can also build the container locally. Just clone this repository
 ```
-git clone https://github.com/cbcb00/audio2txt.git
+git clone https://github.com/hrshith/audio2text.git
 ```
 
 Then change into the directory
