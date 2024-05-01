@@ -113,7 +113,7 @@ Access the application at `http://localhost:5000` after running the Docker conta
 **Resources:**
 - Documentation Link:  https://github.com/openai/whisper/blob/main/README.md
 
- -https://docs.docker.com/guides/
+                       -https://docs.docker.com/guides/
 
 
   # Future Plans
