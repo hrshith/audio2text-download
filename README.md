@@ -100,9 +100,9 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-dowload
 
 **Run Docker Image**
 ```bash
-docker run -p 5000:5000 <image_name>
 
 docker run -p 5000:5000 audio2txtdowload
+
 ```
 
 **Deployment:**
