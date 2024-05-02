@@ -3,7 +3,7 @@
 
 ## Check out the project on Docker Hub - [Docker Hub](https://hub.docker.com/repository/docker/asharshith/audio2txtdowload/general)
 
-#***Repository Overview***:
+# ***Repository Overview***:
 
 This repository hosts a Flask web application integrated with Audi2Text for speech-to-text functionality, Whisper messaging for secure communication, and a feature for downloading text. The README provides instructions on running the application.
 
@@ -34,7 +34,7 @@ These instructions will get you a copy of the project up and running on your loc
 The container runs on port 5000, launch and run it using the below command.
 
 ```
-docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2text-dowload
+docker run -d --name=audio2txt -p 5000:5000 hrshith/audio2txtdowload 
 ```
 ### Browse to http://your-host-ip:5000 to access the web UI
 
@@ -98,28 +98,15 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-dowload
 | large  |   1550 M   |        N/A         |      `large`       |    ~10 GB     |       1x       |
 
 
-**Run Docker Image**
-```bash
+7. **Run Docker Image**
+```
 
 docker run -p 5000:5000 audio2txtdowload
 
 ```
 
-**Deployment:**
-Access the application at `http://localhost:5000` after running the Docker container. one port - 5000 only 
+8. Access the application at `http://localhost:5000` after running the Docker container.
 
-
-
-**Resources:**
-- Documentation Link:  https://github.com/openai/whisper/blob/main/README.md
-
--https://docs.docker.com/guides/
-
-
-  # Future Plans
-- Plans to make the model change accessible during the run command itself to prevent additional work when changing models
-- Currently the app is running on the development server, soon I will be moving it to a WSGI server for proper production use
-- Beautify the web app further since right now its quite barebones but it does the job!
 
 # Credits
 Special credits go to the OpenAI Whisper project which has made this project possible! Check them out at - [Whisper Project](https://github.com/openai/whisper)
