@@ -79,7 +79,7 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
    ```
 4. Change it to anything you like based on the below table (The .en models are english only)
 
-5. 5. For example if you want to run the medium model your code should look like this.
+5. For example if you want to run the medium model your code should look like this.
    ```
    # Load the Whisper model
    model = whisper.load_model("medium")
