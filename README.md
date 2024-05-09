@@ -1,5 +1,7 @@
 ## This project implements the Whisper AI models in an easily accessible and simple to use containerized Web App.
 ## No need to mess with config files and pip dependencies, everything comes packages in a single docker container ready to be used. 
+## And you can run using deploying with Terraform in the different cloud provider and I am using AWS in this project
+
 
 ## Check out the project on Docker Hub - [Docker Hub](https://hub.docker.com/repository/docker/asharshith/audio2txtdowload/general)
 
@@ -59,6 +61,17 @@ Finally once the container is build you can launch it using the command
 ```
 docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
 ```
+
+
+# Deploying with Terraform
+
+  **Install Terraform:Visit the Terraform website to download the appropriate version for your operating system. After downloading, follow the installation instructions below**.
+
+## Create Terraform Configuration File: And its avalible in the infrastructure.tf file formate 
+
+## **Define Resources**:In infrastructure.tf, define the necessary resources for your application. This might include resources such as a doccker images and docker hub details Here's a basic example  deployed  an AWS EC2 instance
+
+The code avalible in my infrastrucute.tf file its creates an EC2 instance with a high end version.
 
 # Additional Notes
 
