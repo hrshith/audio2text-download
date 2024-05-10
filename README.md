@@ -67,15 +67,11 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
 
   **Install Terraform:Visit the Terraform website to download the appropriate version for your operating system  After downloading, follow the installation instructions below**.
 
-## Create Terraform Configuration File: And its avalible in the infrastructure.tf file formate 
-
-## **User
+Create Terraform Configuration File: And its avalible in the infrastructure.tf file formate 
 
 In the infrastructure.tf file, specify the essential resources for my application, including Docker images and their Docker Hub details. Additionally, deploy an AWS EC2 instance with appropriate configuration and specifications, as outlined in the provided statement. Detailed instructions can be found in this readme file
 
-The code avalible in my infrastrucute.tf file its creates an EC2 instance with a high end version using terrafrom script.
-
-# Initialize Terraform: Before applying any changes, you need to initialize Terraform in directory containing your configuration files, Run the following command:
+### Initialize Terraform: Before applying any changes, you need to initialize Terraform in directory containing your configuration files, Run the following command:
 
 To run the below init cmd terraform working directory, installing necessary plugins, configuring the backend, and downloading referenced modules.
 
@@ -96,13 +92,6 @@ To run the below apply cmd to enact changes to your AWS infrastructure based on 
 terraform apply
 ```
 *Confirm changes: Terraform will prompt you to confirm the changes before applying them. Review the changes carefully and type yes to confirm and proceed*
-
-# Managing Terraform State Securely
-It's crucial to manage your Terraform state file securely, especially in shared environments like EC2 instances. Storing your state file locally is not recommended, as it poses security risks and makes collaboration more challenging.
-
-We highly recommend using remote state management to securely store your Terraform state file. Services like Terraform Cloud, AWS S3, or HashiCorp Consul are commonly used for this purpose. Ensure proper access controls are in place to restrict who can modify the state.
-
-For more information on Terraform state management, refer to the official documentation.
 
 # Additional Notes
 
@@ -142,12 +131,7 @@ For more information on Terraform state management, refer to the official docume
 | large  |   1550 M   |        N/A         |      `large`       |    ~10 GB     |       1x       |
 
 
-
-
 7. Access the application at `http://localhost:5000` after running the Docker container.
-
-
-
 
 
 # Credits
