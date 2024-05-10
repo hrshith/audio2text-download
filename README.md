@@ -80,7 +80,22 @@ The code avalible in my infrastrucute.tf file its creates an EC2 instance with a
 ```bash
 terraform init
 ```
+To run the below cmd to see what changes Terraform will make to your  AWS infrastructure .
+```
+terraform plan
+```
+To run the below apply cmd to enact changes to your AWS infrastructure based on the configured plan.
+```
+terraform apply
+```
+*Confirm changes: Terraform will prompt you to confirm the changes before applying them. Review the changes carefully and type yes to confirm and proceed*
 
+# Managing Terraform State Securely
+It's crucial to manage your Terraform state file securely, especially in shared environments like EC2 instances. Storing your state file locally is not recommended, as it poses security risks and makes collaboration more challenging.
+
+We highly recommend using remote state management to securely store your Terraform state file. Services like Terraform Cloud, AWS S3, or HashiCorp Consul are commonly used for this purpose. Ensure proper access controls are in place to restrict who can modify the state.
+
+For more information on Terraform state management, refer to the official documentation.
 
 # Additional Notes
 
