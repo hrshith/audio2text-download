@@ -65,13 +65,22 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
 
 # Deploying with Terraform
 
-  **Install Terraform:Visit the Terraform website to download the appropriate version for your operating system. After downloading, follow the installation instructions below**.
+  **Install Terraform:Visit the Terraform website to download the appropriate version for your operating system  After downloading, follow the installation instructions below**.
 
 ## Create Terraform Configuration File: And its avalible in the infrastructure.tf file formate 
 
-## **Define Resources**:In infrastructure.tf, define the necessary resources for your application. This might include resources such as a doccker images and docker hub details Here's a basic example  deployed  an AWS EC2 instance
+## **User
 
-The code avalible in my infrastrucute.tf file its creates an EC2 instance with a high end version.
+In the infrastructure.tf file, specify the essential resources for my application, including Docker images and their Docker Hub details. Additionally, deploy an AWS EC2 instance with appropriate configuration and specifications, as outlined in the provided statement. Detailed instructions can be found in this readme file
+
+The code avalible in my infrastrucute.tf file its creates an EC2 instance with a high end version using terrafrom script.
+
+# Initialize Terraform: Before applying any changes, you need to initialize Terraform in directory containing your configuration files, Run the following command:
+
+```bash
+terraform init
+```
+
 
 # Additional Notes
 
