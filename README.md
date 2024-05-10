@@ -77,6 +77,8 @@ The code avalible in my infrastrucute.tf file its creates an EC2 instance with a
 
 # Initialize Terraform: Before applying any changes, you need to initialize Terraform in directory containing your configuration files, Run the following command:
 
+To run the below init cmd terraform working directory, installing necessary plugins, configuring the backend, and downloading referenced modules.
+
 ```bash
 terraform init
 ```
