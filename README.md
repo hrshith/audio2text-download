@@ -63,7 +63,7 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
 ```
 
 
-# Deploying with Terraform
+# Deploying Using Terraform
 
   **Install Terraform:Visit the Terraform website to download the appropriate version for your operating system  After downloading, follow the installation instructions below**.
 
