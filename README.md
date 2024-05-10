@@ -161,4 +161,6 @@ Special credits go to the OpenAI Whisper project which has made this project pos
 
 - **Docker**: https://docs.docker.com/reference/dockerfile
 
+- **Terraform**: https://www.terraform.io
+
 
