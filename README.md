@@ -80,6 +80,11 @@ The code avalible in my infrastrucute.tf file its creates an EC2 instance with a
 ```bash
 terraform init
 ```
+To run the below cmd to see whether the configuration file is valid or not .
+```
+terraform   validate
+```
+
 To run the below cmd to see what changes Terraform will make to your  AWS infrastructure .
 ```
 terraform plan
