@@ -82,7 +82,7 @@ terraform init
 ```
 To run the below cmd to see whether the configuration file is valid or not .
 ```
-terraform   validate
+terraform validate
 ```
 
 To run the below cmd to see what changes Terraform will make to your  AWS infrastructure .
