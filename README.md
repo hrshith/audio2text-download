@@ -141,8 +141,6 @@ Special credits go to the OpenAI Whisper project which has made this project pos
 **References:**
 - **Flask**: https://flask.palletsprojects.com/en/3.0.x/
 
-- **Whisper**: https://github.com/openai/whisper/blob/main/README.md
-
 - **Docker**: https://docs.docker.com/reference/dockerfile
 
 - **Terraform**: https://www.terraform.io
