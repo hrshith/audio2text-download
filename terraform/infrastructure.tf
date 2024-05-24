@@ -62,7 +62,8 @@ resource "aws_instance" "web_server" {
               sudo systemctl enable docker
 
               # Pull and run the Docker container on port 5000
-              sudo docker run -d -p 5000:5000 cbcb00/audio2txt:latest
+              sudo docker run -d -p 5000:5000 asharshith/audio2txtdowload:latest
+
               EOF
 
   tags = {
