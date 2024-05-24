@@ -92,6 +92,15 @@ terraform apply
 ```
 *Confirm changes: Terraform will prompt you to confirm the changes before applying them. Review the changes carefully and type yes to confirm and proceed*
 
+
+# Destroy the Infrastructure
+
+##When you are done and want to clean up the resources, you can destroy the Terraform-managed infrastructure with the following command:
+
+````
+terrafrom destroy
+````
+
 # Additional Notes
 
 ## The container runs the base model of Whisper by default, if you want to change it, follow the instructions below. (For future builds I am hoping to incorporate this into the docker run command)
