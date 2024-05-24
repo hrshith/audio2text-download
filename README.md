@@ -66,7 +66,7 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt-download
 
 # Deploying Using Terraform
 
-Create Terraform Configuration File: And its avalible in the infrastructure.tf file formate 
+Create Terraform Configuration File, And its avalible in the infrastructure.tf file formate 
 
 In the infrastructure.tf file, specify the essential resources for my application, including Docker images and their Docker Hub details. Additionally, deploy an AWS EC2 instance with appropriate configuration and specifications, as outlined in the provided statement. Detailed instructions can be found in this readme file
 
