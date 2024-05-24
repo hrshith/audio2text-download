@@ -1,4 +1,4 @@
-## This project implements the Whisper AI models in an easily accessible and simple to use containerized Web App.
+## This project implements the Whisper AI models in an easily accessible and simple to use containerized Web App and terrafrom deployement.
 ## No need to mess with config files and pip dependencies, everything comes packages in a single docker container ready to be used. 
 ## And you can run using deploying with Terraform in the different cloud provider and I am using AWS in this project
 
