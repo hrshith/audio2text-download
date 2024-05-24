@@ -95,7 +95,7 @@ terraform apply
 
 # Destroy the Infrastructure
 
-##When you are done and want to clean up the resources, you can destroy the Terraform-managed infrastructure with the following command:
+When you are done and want to clean up the resources, you can destroy the Terraform-managed infrastructure with the following command:
 
 ````
 terrafrom destroy
